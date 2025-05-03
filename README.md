@@ -62,3 +62,10 @@ This project involves analyzing a fictional music streaming database to uncover 
 2. Open the `soundquery_project.sql` file.  
 3. Run the queries sequentially for step-by-step insights.  
 4. (Optional) Use sample CSVs or ERDs for easier table understanding.
+
+---
+
+## 🤝 Credits  
+- **Dataset:** InLighn Tech (Private)  
+- **Tech Stack:** PostgreSQL  
+- **Created by:** Ashish Barwa
