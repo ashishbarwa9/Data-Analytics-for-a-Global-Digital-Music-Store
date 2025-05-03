@@ -1,80 +1,87 @@
-# 🎧 Global Digital Music Store Analytics Summary
+🎧 Global Digital Music Store Analytics Summary
 
-This project uses SQL to uncover insights from a global digital music store database. It focuses on understanding customer behavior, sales performance, and genre preferences to support data-driven decisions.
+This project leverages SQL queries to derive actionable insights from a global digital music store database. The analysis is divided into key business objectives across leadership, revenue, customer behavior, and genre performance.
 
----
+⸻
 
-## 🔹 1. Leadership Insight
-**Objective:** Identify the most senior employee in the organization.  
-**Query:** Ordered employees by `levels` to highlight top leadership.  
+🔹 1. Leadership Insight
 
----
+Objective: Identify the most senior employee in the organization.
+Result: Pulled the top employee based on organizational level to understand the leadership structure.
 
-## 🌍 2. Top Performing Country by Invoices
-**Objective:** Determine which country has the highest number of transactions.  
-**Query:** Grouped invoices by `billing_country` and counted total transactions.
+⸻
 
----
+🌍 2. Top Performing Country by Invoices
 
-## 💰 3. High-Value Transactions
-**Objective:** Track the top 3 invoices with the highest total purchase amounts.  
-**Query:** Sorted invoice totals in descending order and retrieved the top 3.
+Objective: Determine which country has the highest number of transactions.
+Result: Aggregated invoice counts by country to locate the most active customer region.
 
----
+⸻
 
-## 🏙️ 4. Best City for Promotional Event
-**Objective:** Identify the city generating the most revenue.  
-**Query:** Summed total invoice amounts by `billing_city`.
+💰 3. High-Value Transactions
 
----
+Objective: Track the top 3 invoices with the highest purchase totals.
+Result: Sorted and retrieved the highest sales to monitor big-ticket transactions.
 
-## 🧑‍💼 5. Top-Spending Customer
-**Objective:** Identify the customer who has spent the most money overall.  
-**Query:** Joined customer and invoice tables and aggregated total purchases.
+⸻
 
----
+🏙️ 4. Best City for Promotional Event
 
-## 🎸 6. Rock Music Audience Segmentation
-**Objective:** Find customers who purchase Rock genre music.  
-**Query:** Filtered joined customer, invoice, and track data by genre `'Rock'`.
+Objective: Choose the city generating the highest total revenue.
+Result: Grouped and ranked cities by total invoice amounts to target future marketing efforts.
 
----
+⸻
 
-## 🎤 7. Top Rock Artists
-**Objective:** Identify top Rock artists based on number of tracks.  
-**Query:** Joined artist, album, and track tables and filtered by genre `'Rock'`.
+🧑‍💼 5. Top-Spending Customer
 
----
+Objective: Identify the customer who has spent the most overall.
+Result: Summed all invoices per customer and sorted to find the most valuable client.
 
-## ⏱️ 8. Long-Form Track Opportunities
-**Objective:** Find tracks longer than the average track duration.  
-**Query:** Compared track duration against overall average to highlight opportunities.
+⸻
 
----
+🎸 6. Rock Music Audience Segmentation
 
-## 🎧 9. Customer Spend by Artist
-**Objective:** Calculate how much each customer has spent on each artist.  
-**Query:** Used CTEs and joins to aggregate customer spending per artist.
+Objective: Find customers who purchase Rock music.
+Result: Filtered customer emails and names by Rock genre purchases for targeted campaigns.
 
----
+⸻
 
-## 📊 10. Popular Genre by Country
-**Objective:** Determine the top music genre in each country.  
-**Query:** Ranked genres per country by purchase quantity using window functions.
+🎤 7. Top Rock Artists
 
----
+Objective: Identify leading Rock artists based on track volume.
+Result: Counted tracks per artist within the Rock genre and ranked them.
 
-## 🏆 11. Top Customer per Country
-**Objective:** Identify the highest-spending customer in each country.  
-**Query:** Used CTEs and ranking to get the top spender in each region.
+⸻
 
----
+⏱️ 8. Long-Form Track Opportunities
 
-## ✅ Use Cases
-- **Marketing Strategy:** Target high-spending cities and genre-specific customers.
-- **Revenue Optimization:** Identify high-value transactions and customer segments.
-- **Product Curation:** Focus on popular genres and long-duration tracks for new releases.
+Objective: Spot tracks that are longer than average duration.
+Result: Identified extended tracks for playlists, niche promotions, or editorial curation.
 
----
+⸻
 
-_This project demonstrates how SQL can be used for deep business intelligence across sales, customers, and content performance in the digital music industry._
+🎧 9. Customer Spend by Artist
+
+Objective: Calculate how much each customer has spent on each artist.
+Result: Used aggregation and joins to analyze cross-customer artist revenue.
+
+⸻
+
+📊 10. Popular Genre by Country
+
+Objective: Determine the most popular music genre per country.
+Result: Applied ranking logic to find the top-selling genre in each region.
+
+⸻
+
+🏆 11. Top Customer per Country
+
+Objective: Identify the highest-spending customer in each country.
+Result: Ranked customers by total purchases within each country for loyalty program insights.
+
+⸻
+
+✅ Use Cases for These Insights
+	•	Marketing Strategy: Identify where and whom to target based on genre, location, and spending behavior.
+	•	Revenue Optimization: Focus promotions in high-revenue cities and around high-value customers.
+	•	Product Development: Develop more long-form tracks or artist features based on customer demand.
